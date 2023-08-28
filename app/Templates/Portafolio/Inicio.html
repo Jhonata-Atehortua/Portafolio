@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    <nav class="navbar fixed-top bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Inicio</a>
+        </div>
+      </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-6 InfoI">
+                        <p class="Usuario">Un saludo me llamo (Nombre) (Apellido)</p>
+                        <h1>Este es mi portafolio </h1>
+                        <p class="P1">Programador Backend</p>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p class="P2">Lenguajes Programacion</p>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>PHP</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-12">
+                                <p class="P2">Frameworks</p>
+                                <ul>
+                                    <li>FastAPI</li>
+                                    <li>Django</li>
+                                    <li>Laravel</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-12">
+                                <p class="P2">Base de Datos</p>
+                                <ul>
+                                    <li>Mysql</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-12">
+                                <p class="P2">Otros Conocimientos</p>
+                                <ul>
+                                    <li>Git Hub y Git Lab</li>
+                                    <li>API Rest</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ImgI">
+                        <img src="{% static 'img/Foto2.jpg' %}" alt="Usuario">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3>Projectos Realizados</h3>
+                    </div> 
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
