@@ -1,41 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap');
-
-.container{
-    margin-top: 80px;
-    font-family: 'Cormorant', serif;
+.ContenedorInfor{
+    padding-top: 6%;
+    text-align: center;
+    padding-bottom: 5%;
 }
 
-.InfoI {
-    background-color: blanchedalmond;
+.ContenedorInfor img{
+    margin: 0 auto;
+    width: 31%;
+    border-radius: 10%;
 }
 
-.InfoI .Usuario{
-    font-size: large;
-    text-transform: uppercase;
-}
-.InfoI h1{
-    font-size: 45px;
-    text-transform: uppercase;
+.ContenedorInfor .info{
+    padding-top: 1%;
 }
 
-.InfoI .P1{
-    font-size: 30px;
-}
-.InfoI .P2{
-    font-size: 25px;
+.ContenedorSobreMi{
+    padding-top: 10%;
+    padding-bottom: 15%;
 }
 
-.InfoI li{
-    font-size: 20px;
-}
-
-.ImgI {
-    background-color: aqua;
+.ContenedorSobreMi h4{
     text-align: center;
 }
 
-.ImgI img{
-    border-radius: 15px;
-    width: 80%;
+.ContenedorSobreMi .col{
+    padding: 4%;
+    margin: 2%;
+    text-align: center;
+    border-radius: 7%;
+    background-color: bisque;
 }
 

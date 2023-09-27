@@ -1,12 +1,12 @@
 from django.db import models
 
 class Usuario(models.Model):
-    codigo_usurio = models.IntegerField(max_length=25,null=False,unique=True,primary_key=True)
+    codigo_usurio = models.IntegerField(null=False,unique=True,primary_key=True)
     primer_nombre = models.CharField(max_length=25,null=False)
     segundo_nombre = models.CharField(max_length=25,null=True)
     primer_apellido = models.CharField(max_length=25,null=False)
     segundo_apellido = models.CharField(max_length=25,null=True)
-    numero_celular = models.IntegerField(max_length=25,null=False)
+    numero_celular = models.IntegerField(null=False)
     correo_electronico = models.EmailField(max_length=100,null=False)
     url_git = models.TextField()
 

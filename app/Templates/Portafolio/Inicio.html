@@ -1,84 +1,177 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/estilos.css'%}">
 </head>
+
 <body>
-    <nav class="navbar fixed-top bg-body-tertiary">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Inicio</a>
-        </div>
-      </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="row">
-                    <div class="col-lg-6 InfoI">
-                        <p class="Usuario">Un saludo me llamo (Nombre) (Apellido)</p>
-                        <h1>Este es mi portafolio </h1>
-                        <p class="P1">Programador Backend</p>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <p class="P2">Lenguajes Programacion</p>
-                                <ul>
-                                    <li>Python</li>
-                                    <li>PHP</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-12">
-                                <p class="P2">Frameworks</p>
-                                <ul>
-                                    <li>FastAPI</li>
-                                    <li>Django</li>
-                                    <li>Laravel</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-12">
-                                <p class="P2">Base de Datos</p>
-                                <ul>
-                                    <li>Mysql</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-12">
-                                <p class="P2">Otros Conocimientos</p>
-                                <ul>
-                                    <li>Git Hub y Git Lab</li>
-                                    <li>API Rest</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 ImgI">
-                        <img src="{% static 'img/Foto2.jpg' %}" alt="Usuario">
-                    </div>
-                </div>
+            <a class="navbar-brand" href="#">Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#SobreMi">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactanos</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-lg-12">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h3>Projectos Realizados</h3>
-                    </div> 
-                    <div class="col-lg-12">
-                        <div class="row">
-                            <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-12 ContenedorInfor">
+                <img src="{% static 'img/Foto2.jpg'%}" alt="ImagenUsuario">
+                <div class="    ">
+                    <p class="display-5">SALUDOS SOY JHONATAN ATEHORTUA</p>
+                    <p class="h5">PROGRAMADOR BACKEND</p>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container" id="SobreMi">
+        <div class="row ContenedorSobreMi">
+            <div class="col-lg-5">
+                <h4>Mis Habilidades</h4>
+                <div class="row align-items-start">
+                    <div class="col">
+                        Python
+                    </div>
+                    <div class="col">
+                        PHP
+                    </div>
+                    <div class="col">
+                        JavaScript Basic
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col">
+                        FastAPI
+                    </div>
+                    <div class="col">
+                        Django
+                    </div>
+
+                    <div class="col">
+                        HTML
+                    </div>
+
+                </div>
+                <div class="row align-items-center">
+                    <div class="col">
+                        MySQL
+                    </div>
+                    <div class="col">
+                        GIT
+                    </div>
+                    <div class="col">
+                        Github
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <h4>Sobre Mi</h4>
+                <p class="fs-5">
+                    Soy un entusiasta de la tecnología con una pasión innata por aprender y mejorar mis habilidades
+                    constantemente. Disfruto de los desafíos que se presentan en el mundo de la programación y la
+                    tecnología, y siempre estoy dispuesto a asumir nuevos proyectos que me permitan aplicar mis
+                    conocimientos y contribuir al éxito del equipo.
+                </p>
+                <p class="fs-5">
+                    Mi enfoque en el trabajo en equipo se deriva de mi creencia en que la colaboración es fundamental
+                    para alcanzar resultados excepcionales. Me encanta ser parte de un grupo donde podemos compartir
+                    ideas, adquirir nuevos conocimientos y crecer juntos profesionalmente.
+                </p>
+                <p class="fs-5">
+                    Mi objetivo es seguir expandiendo mi conjunto de habilidades y enfrentar nuevos desafíos en el campo
+                    de la tecnología y la programación. Estoy comprometido con la excelencia y ansío participar en
+                    proyectos emocionantes que me permitan aplicar mis habilidades de manera efectiva y creativa.
+                </p>
+                <p class="fs-5">
+                    Esta descripción detallada destaca tus conocimientos y habilidades en las áreas mencionadas, así
+                    como tu actitud positiva hacia el aprendizaje continuo y el trabajo en equipo. Puedes personalizarla
+                    aún más según tus necesidades y preferencias específicas.
+                </p>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="Proyectos">
+        <div class="row Proyectos">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'img/Basic_html.png' %}" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Pagina Web Html, Css, Bootstrap </h5>
+                            <p>Es una pagina web que se encarga de comercializar relojes</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/Backup_Google_Drive.png' %}" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Backup Google Drive</h5>
+                            <p>Este proyecto se encarga de sacar una copia de seguridad desde Google Drive</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/Azure_Api.png' %}" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>ApiRest y Azure</h5>
+                            <p>Se realizo una ApiRest donde se pudiera obtener datos de un block storage de azure</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/Api_Post.png' %}" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Consumir Api</h5>
+                            <p>Se encarga de consumir una api y mostrar la informacion de los post creados</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
