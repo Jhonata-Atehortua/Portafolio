@@ -1,33 +1,211 @@
-.ContenedorInfor{
-    padding-top: 6%;
-    text-align: center;
-    padding-bottom: 5%;
+/*Movil Medio*/
+@media only screen and (min-width:360px) and (max-width:640px){
+    .ContenedorInfor{
+        padding-top: 55%;
+        text-align: center;
+        padding-bottom: 55%;
+    }
+    .ContenedorInfor .Presentacion{
+        background-color: aqua;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        border-radius: 10%;
+    }
+
+    .ContenedorInfor .Presentacion .A{
+        font-size: 18px;
+    }
+
+    .ContenedorSobreMi{
+        padding-top: 20%;
+        padding-bottom: 10%;
+    }
+    
+    .ContenedorSobreMi h4{
+        padding-bottom: 4%;
+        text-align: center;
+    }
+    
+    .ContenedorSobreMi .col{
+        padding: 3%;
+        margin: 2%;
+        text-align: center;
+        border-radius: 7%;
+        background-color: bisque;
+    }
+    .ContenedorSobreMi .Info{
+        text-align: center;
+    }
+    .ContenedorSobreMi .Info h4{
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+
+    .Proyectos {
+        text-align: center;
+        padding-top: 60%;
+        padding-bottom: 60%;
+    }
+    .Proyectos img{
+        height: 150%;
+        width: 100%;
+        border-radius: 2%;
+    }
+    
+}
+/*Movil Grande*/
+@media only screen and (min-width:720px) and (max-width:1280px){
+    .ContenedorInfor{
+        padding-top: 90%;
+        text-align: center;
+        padding-bottom: 90%;
+    }
+    .ContenedorInfor .Presentacion{
+        background-color: aqua;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        border-radius: 10%;
+    }
+
+    .ContenedorInfor .Presentacion .A{
+        font-size: 18px;
+    }
+
+    .ContenedorSobreMi{
+        padding-top: 20%;
+        padding-bottom: 100%;
+    }
+    
+    .ContenedorSobreMi h4{
+        padding-bottom: 4%;
+        text-align: center;
+    }
+    
+    .ContenedorSobreMi .col{
+        padding: 3%;
+        margin: 2%;
+        text-align: center;
+        border-radius: 7%;
+        background-color: bisque;
+    }
+    .ContenedorSobreMi .Info{
+        text-align: center;
+    }
+    .ContenedorSobreMi .Info h4{
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+
+    .Proyectos {
+        text-align: center;
+        padding-bottom: 100%;
+        margin-left: -10%;
+        margin-right: -10%;
+    }
+    .Proyectos img{
+        width: 130%;
+        border-radius: 2%;
+    }
+    
+}
+/*Portatil Medio*/
+@media only screen and (min-width:900px) and (max-width:1366px){
+    .ContenedorInfor{
+        padding-top: 90%;
+        text-align: center;
+        padding-bottom: 90%;
+    }
+    .ContenedorInfor .Presentacion{
+        background-color: aqua;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        border-radius: 10%;
+    }
+
+    .ContenedorInfor .Presentacion .A{
+        font-size: 18px;
+    }
+
+    .ContenedorSobreMi{
+        padding-top: 20%;
+        padding-bottom: 100%;
+    }
+    
+    .ContenedorSobreMi h4{
+        padding-bottom: 4%;
+        text-align: center;
+    }
+    
+    .ContenedorSobreMi .col{
+        padding: 3%;
+        margin: 2%;
+        text-align: center;
+        border-radius: 7%;
+        background-color: bisque;
+    }
+    .ContenedorSobreMi .Info{
+        text-align: center;
+    }
+    .ContenedorSobreMi .Info h4{
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+
+    .Proyectos {
+        text-align: center;
+        padding-bottom: 100%;
+        margin-left: -10%;
+        margin-right: -10%;
+    }
+    .Proyectos img{
+        width: 130%;
+        border-radius: 2%;
+    }
+    
 }
 
-.ContenedorInfor img{
-    margin: 0 auto;
-    width: 31%;
-    border-radius: 10%;
+@media only screen and (min-width:1440px){
+    .ContenedorInfor{
+        padding-top: 6%;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    
+    .ContenedorInfor .Presentacion{
+        margin: 0 auto;
+        padding-top: 16%;
+        padding-bottom: 16%;
+        width: 80%;
+        border-radius: 10%;
+    }
+    
+    .ContenedorInfor .info{
+        padding-top: 1%;
+    }
+    
+    .ContenedorSobreMi{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    
+    .ContenedorSobreMi h4{
+        text-align: center;
+    }
+    
+    .ContenedorSobreMi .col{
+        padding: 4%;
+        margin: 2%;
+        text-align: center;
+        border-radius: 7%;
+        background-color: bisque;
+    }
+    
+    .Proyectos {
+        text-align: center;
+        padding-top: 8%;
+        padding-bottom: 10%;
+    }
+    
 }
 
-.ContenedorInfor .info{
-    padding-top: 1%;
-}
-
-.ContenedorSobreMi{
-    padding-top: 10%;
-    padding-bottom: 15%;
-}
-
-.ContenedorSobreMi h4{
-    text-align: center;
-}
-
-.ContenedorSobreMi .col{
-    padding: 4%;
-    margin: 2%;
-    text-align: center;
-    border-radius: 7%;
-    background-color: bisque;
-}
 
