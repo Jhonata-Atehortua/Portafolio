@@ -32,7 +32,7 @@
                         <a class="nav-link" href="#Proyectos">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contactanos</a>
+                        <a class="nav-link" href="#Formulario">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -125,7 +125,7 @@
                         aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
                         aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
@@ -171,7 +171,28 @@
             </div>
         </div>
     </div>
-    
+    <div class="container" id="Formulario">
+        <div class="row Formulario">
+            <div class="col-lg-12">
+                <h3>Contacto</h3>
+            </div>
+            <div class="col-lg-12">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {% for fields in Formulario %}
+                    <div class="mb-3">
+                        <label for="{{fields.label}}" class="form-label">{{fields.label}}</label>
+                        <input type="{{fields.field.widget.input_type}}" name="{{fields.name}}" id="{{fields.label}}"
+                            class="form-control" placeholder="{{fields.lable}}">
+                    </div>
+                    {% endfor %}
+                    <div class="mb-3">
+                        <input type="submit" class="form-control btn btn-success" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
