@@ -1,52 +1,76 @@
-.ContenedorInfor{
-    padding-top: 6%;
-    text-align: center;
-    padding-bottom: 5%;
+nav {
+  color: white;
 }
 
-.ContenedorInfor .Presentacion{
-    margin: 0 auto;
-    padding-top: 16%;
-    padding-bottom: 16%;
-    width: 80%;
-    border-radius: 10%;
+.ContenedorInfor {
+  padding-top: 2%;
+  text-align: center;
+  padding-bottom: 5%;
+  color: white;
 }
 
-.ContenedorInfor .info{
-    padding-top: 1%;
+.ContenedorInfor .Presentacion {
+  margin: 0 auto;
+  padding-top: 16%;
+  padding-bottom: 16%;
+  width: 80%;
+  border-radius: 10%;
 }
 
-.ContenedorSobreMi{
-    padding-top: 10%;
-    padding-bottom: 10%;
+.ContenedorInfor .info {
+  padding-top: 1%;
 }
 
-.ContenedorSobreMi h4{
-    text-align: center;
+.ContenedorSobreMi {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
-.ContenedorSobreMi .col{
-    padding: 4%;
-    margin: 2%;
-    text-align: center;
-    border-radius: 7%;
-    background-color: bisque;
+.ContenedorSobreMi h4 {
+  text-align: center;
+}
+
+.ContenedorSobreMi .col-3 {
+  padding: 4%;  
+  margin: 2%;
+  text-align: center;
+  border-radius: 7%;
+  background-color: bisque;
 }
 
 .Proyectos {
-    text-align: center;
-    padding-top: 8%;
-    padding-bottom: 15%;
+  text-align: center;
+  padding-top: 8%;
+  padding-bottom: 15%;
 }
 
-.Formulario h3{
-    font-size: 45px;
-    text-align: center;
-    color: red;
+.Formulario h3 {
+  font-size: 45px;
+  text-align: center;
+  color: rgb(0, 0, 0);
 }
-.Formulario{
-    width: 60%;
-    margin: 0 auto;
-    padding-top: 8%;
-    padding-bottom: 15%;
+.Formulario {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 15%;
+  padding-bottom: 17%;
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.PiePagina {
+  padding-top: 2%;
+}
+
+.PiePagina .Descripcion {
+  text-align: end;
+}
+
+.PiePagina .Derechos {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
 }

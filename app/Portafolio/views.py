@@ -1,6 +1,7 @@
 from django.core.mail import send_mail
 from django.shortcuts import render
 from .form import Contactanos
+from .models import Habilidades,Usuario
 
 def Inicio(request):
     if request.method == "POST":
@@ -12,5 +13,7 @@ def Inicio(request):
             Destino = ["jatehortua561@gmail.com"]
             send_mail(Asunto,Mensaje,Origen,Destino)
     
+    InfoUsuario = Usuario.ObtenerInfoUsuario()
+    HabilidadesU = Habilidades.ObtenerHabilidadesUsuario()
     formulario = Contactanos()
-    return render(request,'Portafolio/Inicio.html',{'Formulario':formulario})
+    return render(request,'Portafolio/Inicio.html',{'Formulario':formulario,'InfoU':InfoUsuario,'Habilidades':HabilidadesU})
