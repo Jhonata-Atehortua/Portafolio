@@ -68,7 +68,14 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 
 DATABASES = {
-    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'JhonatanATehortu$Portafolio',
+        'USER': 'JhonatanATehortu',
+        'PASSWORD': 'Ryzen#5386',
+        'HOST': 'JhonatanATehortua.mysql.pythonanywhere-services.com',
+        'PORT': '3306',
+    }
 }
 
 
@@ -107,8 +114,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
+STATIC_URL = '/static/'
+STATICFILES_DIRS = os.path.join(BASE_DIR,'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
